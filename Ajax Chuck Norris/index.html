@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2><img src="img/headerNorris.jpg"> Norris Joke Generator</h2>
+        <!-- INPUT AREA -->
+        <form id="jokes-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <!-- <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName">
+            </div> -->
+            <div>
+                <label for="numJokes">Number of Jokes</label>
+                <input type="number" id="number">
+            </div>
+            <div>
+        <button id="btn-jokes" class="get-jokes waves-effect waves-light btn-small">Get Jokes</button>
+        </div>
+        </form>
+        <br><br>
+        <!-- GIF AREA -->
+        <div class="chuckapp" id="chuckapp">
+                <img src="img/chuckapp.gif" alt="">
+            </div>
+        <div class="norris" id="norris">
+            <img src="img/norris.gif" alt="">
+        </div>
+        <!-- OUTPUT AREA -->
+        <ul class="jokes collection" id="jokes-collection"></ul>
+        <!-- OUTPUT GIF -->
+        <div class="chuck" id="chuck">
+            <img src="img/chuck.gif">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
